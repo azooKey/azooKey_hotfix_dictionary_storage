@@ -8,6 +8,16 @@
     },
     "data": [
         {
+            "word": "2025-05-04T16:22:00.00",
+            "ruby": "ホットフィックスアップデート",
+            "word_weight": -17,
+            "lcid": "1288",
+            "rcid": "1288",
+            "mid": "501",
+            "date": "2025-05-04",
+            "author": "@ensan-hcl"
+        },
+        {
             "word": "azooKey",
             "ruby": "あずーきー",
             "word_weight": -15,
