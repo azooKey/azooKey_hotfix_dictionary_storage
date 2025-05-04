@@ -1,0 +1,20 @@
+{
+    "metadata": {
+        "name": "data.json",
+        "description": "A JSON file containing a list of dictionaries.",
+        "version": "1.0",
+        "last_update": "2025-05-04 12:00:00"
+    },
+    "data": [
+        {
+            "word": "azooKey",
+            "ruby": "あずーきー",
+            "word_weight": -15,
+            "lcid": "1288",
+            "rcid": "1288",
+            "mid": "501",
+            "date": "2025-05-04",
+            "author": "@ensan-hcl"
+        }
+    ]
+}
