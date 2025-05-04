@@ -1,0 +1,35 @@
+
+
+name: Google Form Issue
+
+on:
+  repository_dispatch:
+    types: [google_form]
+
+permissions:
+  issues: write
+  contents: read
+
+jobs:
+  create-issue:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Open issue with form response
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const payload = context.payload.client_payload;
+            const title = `Form response – ${payload.filename}`;
+            const body = [
+              '自動生成された Issue です。以下にフォームの回答内容を貼り付けています。',
+              '',
+              '```',
+              payload.content,
+              '```'
+            ].join('\n');
+            await github.rest.issues.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title,
+              body
+            });
