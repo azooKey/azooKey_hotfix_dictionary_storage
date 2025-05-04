@@ -11,6 +11,8 @@ jobs:
     # Run only when the pull request was actually merged (not just closed)
     if: github.event.pull_request.merged == true
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
 
     steps:
       - name: Checkout repository
