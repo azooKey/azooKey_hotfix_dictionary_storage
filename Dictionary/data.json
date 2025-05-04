@@ -1,9 +1,10 @@
 {
     "metadata": {
+        "status": "active",
         "name": "data.json",
         "description": "A JSON file containing a list of dictionaries.",
         "version": "1.0",
-        "last_update": "2025-05-04 12:00:00"
+        "last_update": "2025-05-04T12:00:00.00"
     },
     "data": [
         {
