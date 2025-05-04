@@ -1,0 +1,32 @@
+
+
+name: Create Release on Merge
+
+on:
+  pull_request:
+    types: [closed]
+
+jobs:
+  release:
+    # Run only when the pull request was actually merged (not just closed)
+    if: github.event.pull_request.merged == true
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # Generate a tag based on current UTC date‑time down to seconds, e.g., v20250504123045
+      - name: Set release tag
+        id: version
+        run: echo "TAG=v$(date -u +'%Y%m%d%H%M%S')" >> "$GITHUB_OUTPUT"
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v1
+        with:
+          tag_name: ${{ steps.version.outputs.TAG }}
+          name: Release ${{ steps.version.outputs.TAG }}
+          generate_release_notes: true
+          files: Dictionary/data.json
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
