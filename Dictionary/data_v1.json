@@ -16,6 +16,16 @@
             "mid": 501,
             "date": "2025-05-04",
             "author": "@ensan-hcl"
+        },
+        {
+            "word": "Switch 2",
+            "ruby": "すいっちつー",
+            "word_weight": -15.0,
+            "lcid": 1288,
+            "rcid": 1288,
+            "mid": 501,
+            "date": "2025-05-04",
+            "author": "Google Form"
         }
     ]
 }
