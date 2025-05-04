@@ -21,7 +21,7 @@ jobs:
             const payload = context.payload.client_payload;
             const title = `Form response – ${payload.filename}`;
             const body = [
-              '自動生成された Issue です。以下にフォームの回答内容を貼り付けています。',
+              'Google Formに辞書追加のリクエストがありました。対応を検討してください。',
               '',
               '```',
               payload.content,
