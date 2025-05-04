@@ -1,7 +1,7 @@
 {
     "metadata": {
         "status": "active",
-        "name": "data.json",
+        "name": "data_v1.json",
         "description": "A JSON file containing a list of dictionaries.",
         "version": "1.0",
         "last_update": "2025-05-04T16:30:00.00"
