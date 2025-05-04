@@ -2,6 +2,13 @@
 
 このレポジトリでは、azooKeyの「ホットフィックス」辞書を管理します。ホットフィックス辞書はアプリで自動的にダウンロードされ、ユーザ辞書に統合されます。
 
+## ユーザの方へ
+azooKey全体に共有したい辞書情報がある場合、以下のGoogle Formから送信してください。
+
+* [Google Form（リクエスト用）](https://docs.google.com/forms/d/e/1FAIpQLSceGtIHH8P-KbrB2ownprap3cUVVJegbhGekfz1xCiwPxBNfg/viewform)
+
+GitHubアカウントをお持ちの場合は、直接IssueまたはPull Requestを立てていただいても構いません。
+
 ## JSONの構造
 
 
