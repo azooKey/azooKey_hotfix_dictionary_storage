@@ -56,6 +56,36 @@
             "mid": 501,
             "date": "2025-05-18",
             "author": "@ensan-hcl"
+        },
+        {
+            "word": "髙",
+            "ruby": "はしごだか",
+            "word_weight": -15.0,
+            "lcid": 1285,
+            "rcid": 1285,
+            "mid": 501,
+            "date": "2025-05-18",
+            "author": "Google Form"
+        },
+        {
+            "word": "﨑",
+            "ruby": "たつさき",
+            "word_weight": -15.0,
+            "lcid": 1285,
+            "rcid": 1285,
+            "mid": 501,
+            "date": "2025-05-18",
+            "author": "Google Form"
+        },
+        {
+            "word": "𠮷",
+            "ruby": "つちよし",
+            "word_weight": -15.0,
+            "lcid": 1285,
+            "rcid": 1285,
+            "mid": 501,
+            "date": "2025-05-18",
+            "author": "Google Form"
         }
     ]
 }
