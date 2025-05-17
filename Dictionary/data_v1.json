@@ -36,6 +36,16 @@
             "mid": 501,
             "date": "2025-05-04",
             "author": "Google Form"
+        },
+        {
+            "word": "初見",
+            "ruby": "しょけん",
+            "word_weight": -10.0,
+            "lcid": 1287,
+            "rcid": 1287,
+            "mid": 501,
+            "date": "2025-05-18",
+            "author": "@ensan-hcl"
         }
     ]
 }
