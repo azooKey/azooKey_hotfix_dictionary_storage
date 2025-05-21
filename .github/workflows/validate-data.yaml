@@ -1,0 +1,14 @@
+name: Validate data_v1.json
+
+on:
+  pull_request:
+
+jobs:
+  validate-json:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      - name: Validate JSON format
+        run: |
+          python scripts/validate_json.py Dictionary/data_v1.json
