@@ -136,6 +136,66 @@
             "mid": 501,
             "date": "2025-05-31",
             "author": "Google Form"
+        },
+        {
+            "word": "堪えれ",
+            "ruby": "こらえれ",
+            "word_weight": -15,
+            "lcid": 617,
+            "rcid": 617,
+            "mid": 501,
+            "date": "2025-06-09",
+            "author": "Google Form"
+        },
+        {
+            "word": "堪える",
+            "ruby": "こらえる",
+            "word_weight": -15,
+            "lcid": 619,
+            "rcid": 619,
+            "mid": 501,
+            "date": "2025-06-09",
+            "author": "Google Form"
+        },
+        {
+            "word": "堪えよ",
+            "ruby": "こらえよ",
+            "word_weight": -15,
+            "lcid": 621,
+            "rcid": 621,
+            "mid": 501,
+            "date": "2025-06-09",
+            "author": "Google Form"
+        },
+        {
+            "word": "堪え",
+            "ruby": "こらえ",
+            "word_weight": -15,
+            "lcid": 622,
+            "rcid": 622,
+            "mid": 501,
+            "date": "2025-06-09",
+            "author": "Google Form"
+        },
+        {
+            "word": "堪えろ",
+            "ruby": "こらえろ",
+            "word_weight": -15,
+            "lcid": 623,
+            "rcid": 623,
+            "mid": 501,
+            "date": "2025-06-09",
+            "author": "Google Form"
+        },
+        {
+            "word": "堪え",
+            "ruby": "こらえ",
+            "word_weight": -15,
+            "lcid": 625,
+            "rcid": 625,
+            "mid": 501,
+            "date": "2025-06-09",
+            "author": "Google Form"
         }
     ]
 }
