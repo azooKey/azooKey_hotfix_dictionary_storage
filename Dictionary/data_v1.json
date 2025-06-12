@@ -196,6 +196,16 @@
             "mid": 501,
             "date": "2025-06-09",
             "author": "Google Form"
+        },
+        {
+            "word": "ピサの斜塔",
+            "ruby": "ぴさのしゃとう",
+            "word_weight": -10.0,
+            "lcid": 1293,
+            "rcid": 1293,
+            "mid": 501,
+            "date": "2025-06-13",
+            "author": "Google Form"
         }
     ]
 }
