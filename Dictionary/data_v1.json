@@ -216,6 +216,16 @@
             "mid": 501,
             "date": "2025-06-24",
             "author": "Google Form"
+        },
+        {
+            "word": "孔明",
+            "ruby": "こうめい",
+            "word_weight": -14.0,
+            "lcid": 1291,
+            "rcid": 1291,
+            "mid": 501,
+            "date": "2025-07-05",
+            "author": "Google Form"
         }
     ]
 }
