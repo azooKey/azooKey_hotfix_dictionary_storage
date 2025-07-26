@@ -7,7 +7,7 @@ azooKey全体に共有したい辞書情報がある場合、以下のGoogle For
 
 * [Google Form（リクエスト用）](https://docs.google.com/forms/d/e/1FAIpQLSceGtIHH8P-KbrB2ownprap3cUVVJegbhGekfz1xCiwPxBNfg/viewform)
 
-GitHubアカウントをお持ちの場合は、直接IssueまたはPull Requestを立てていただいても構いません。
+**GitHubアカウントをお持ちの場合は、直接IssueまたはPull Requestを立てていただいたほうが助かります**。
 
 ## JSONの構造
 
