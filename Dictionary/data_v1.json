@@ -236,6 +236,16 @@
             "mid": 501,
             "date": "2025-07-27",
             "author": "Google Form (#120)"
+        },
+        {
+            "word": "音信不通",
+            "ruby": "おんしんふつう",
+            "word_weight": -10.0,
+            "lcid": 1287,
+            "rcid": 1287,
+            "mid": 501,
+            "date": "2025-07-27",
+            "author": "Google Form (#140)"
         }
     ]
 }
