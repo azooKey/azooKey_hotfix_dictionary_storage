@@ -246,6 +246,76 @@
             "mid": 501,
             "date": "2025-07-27",
             "author": "Google Form (#140)"
+        },
+        {
+            "word": "誘わ",
+            "ruby": "いざなわ",
+            "word_weight": -15,
+            "lcid": 823,
+            "rcid": 823,
+            "mid": 501,
+            "date": "2025-08-03",
+            "author": "Google Form"
+        },
+        {
+            "word": "誘う",
+            "ruby": "いざなう",
+            "word_weight": -15,
+            "lcid": 817,
+            "rcid": 817,
+            "mid": 501,
+            "date": "2025-08-03",
+            "author": "Google Form"
+        },
+        {
+            "word": "誘い",
+            "ruby": "いざない",
+            "word_weight": -15,
+            "lcid": 832,
+            "rcid": 832,
+            "mid": 501,
+            "date": "2025-08-03",
+            "author": "Google Form"
+        },
+        {
+            "word": "誘え",
+            "ruby": "いざなえ",
+            "word_weight": -15,
+            "lcid": 814,
+            "rcid": 814,
+            "mid": 501,
+            "date": "2025-08-03",
+            "author": "Google Form"
+        },
+        {
+            "word": "誘え",
+            "ruby": "いざなえ",
+            "word_weight": -15,
+            "lcid": 826,
+            "rcid": 826,
+            "mid": 501,
+            "date": "2025-08-03",
+            "author": "Google Form"
+        },
+        {
+            "word": "誘っ",
+            "ruby": "いざなっ",
+            "word_weight": -15,
+            "lcid": 829,
+            "rcid": 829,
+            "mid": 501,
+            "date": "2025-08-03",
+            "author": "Google Form"
+        },
+        {
+            "word": "誘お",
+            "ruby": "いざなっ",
+            "word_weight": -15,
+            "lcid": 820,
+            "rcid": 820,
+            "mid": 501,
+            "date": "2025-08-03",
+            "author": "Google Form"
         }
     ]
 }
