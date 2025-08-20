@@ -63,7 +63,7 @@ async function createIssueFromForm({ github, context, core, fetch }) {
         }
       } else {
         llmError = `HTTP ${res.status}`;
-        core.warning(`LLM filtering failed: ${llmError}`);
+        core.warning(`LLM filtering failed: res not ok. error: ${llmError}`);
       }
     } catch (err) {
       llmError = `${err}`;
