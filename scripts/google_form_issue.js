@@ -10,7 +10,12 @@ async function createIssueFromForm({ github, context, core, fetch }) {
   const supplement = supplementMatch ? supplementMatch[1].trim() : '';
 
   let filteredContent = content;
+  let llmCalled = false;
+  let llmError = null;
+  let toxicVerdict = null;
+
   if (supplement) {
+    llmCalled = true;
     try {
       const res = await fetch('https://models.github.ai/inference/chat/completions', {
         method: 'POST',
@@ -48,6 +53,7 @@ async function createIssueFromForm({ github, context, core, fetch }) {
         const data = await res.json();
         const msg = data?.choices?.[0]?.message?.content;
         const result = JSON.parse(msg);
+        toxicVerdict = result.toxic;
         core.info(`LLM verdict: ${JSON.stringify(result)}`);
         if (result.toxic) {
           filteredContent = content.replace(
@@ -55,8 +61,12 @@ async function createIssueFromForm({ github, context, core, fetch }) {
             `この単語について補足すべき情報があれば記載してください: ${result.cat}`
           );
         }
+      } else {
+        llmError = `HTTP ${res.status}`;
+        core.warning(`LLM filtering failed: ${llmError}`);
       }
     } catch (err) {
+      llmError = `${err}`;
       core.warning(`LLM filtering failed: ${err}`);
     }
   }
@@ -71,14 +81,24 @@ async function createIssueFromForm({ github, context, core, fetch }) {
     '',
     '```',
     filteredContent,
-    '```'
-  ].join('\n');
+    '```',
+    '',
+    '以下はGitHub Actionsの実行ログです',
+    `LLM API called: ${llmCalled ? 'Yes' : 'No'}`,
+    llmError ? `Error: ${llmError}` : null,
+    toxicVerdict !== null ? `Toxic verdict: ${toxicVerdict}` : null
+  ].filter(Boolean).join('\n');
+
   await github.rest.issues.create({
     owner: context.repo.owner,
     repo: context.repo.repo,
     title,
     body
   });
+
+  core.setOutput('llm_called', llmCalled);
+  if (llmError) core.setOutput('llm_error', llmError);
+  if (toxicVerdict !== null) core.setOutput('llm_toxic', toxicVerdict);
 }
 
 module.exports = { createIssueFromForm };
