@@ -1,5 +1,3 @@
-
-
 name: Google Form Issue
 
 on:
@@ -18,6 +16,7 @@ jobs:
       - name: Check out repository
         uses: actions/checkout@v4
       - name: Open issue with form response
+        id: create
         uses: actions/github-script@v7
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -25,3 +24,15 @@ jobs:
           script: |
             const { createIssueFromForm } = require('./scripts/google_form_issue.js');
             await createIssueFromForm({ github, context, core, fetch });
+      - name: Summarize LLM call
+        if: always()
+        run: |
+          {
+            echo "LLM API called: ${{ steps.create.outputs.llm_called }}";
+            if [ -n "${{ steps.create.outputs.llm_error }}" ]; then
+              echo "Error: ${{ steps.create.outputs.llm_error }}";
+            fi
+            if [ -n "${{ steps.create.outputs.llm_toxic }}" ]; then
+              echo "Toxic verdict: ${{ steps.create.outputs.llm_toxic }}";
+            fi
+          } >> "$GITHUB_STEP_SUMMARY"
