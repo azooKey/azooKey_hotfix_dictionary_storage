@@ -4,7 +4,7 @@
         "name": "data_v1.json",
         "description": "A JSON file containing a list of dictionaries.",
         "version": "1.0",
-        "last_update": "2025-05-04T16:30:00.00"
+        "last_update": "2025-08-05T17:40:00.00"
     },
     "data": [
         {
@@ -315,6 +315,16 @@
             "rcid": 820,
             "mid": 501,
             "date": "2025-08-03",
+            "author": "Google Form"
+        },
+        {
+            "word": "糺の森",
+            "ruby": "ただすのもり",
+            "word_weight": -12.0,
+            "lcid": 1293,
+            "rcid": 1293,
+            "mid": 501,
+            "date": "2025-08-05",
             "author": "Google Form"
         }
     ]
