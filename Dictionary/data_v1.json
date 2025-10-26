@@ -316,6 +316,16 @@
             "mid": 501,
             "date": "2025-08-03",
             "author": "Google Form"
+        },
+        {
+            "word": "自維",
+            "ruby": "じい",
+            "word_weight": -15.0,
+            "lcid": 1288,
+            "rcid": 1288,
+            "mid": 501,
+            "date": "2025-10-26",
+            "author": "@ensan-hcl"
         }
     ]
 }
