@@ -3,8 +3,11 @@
 name: Create Release on Merge
 
 on:
-  pull_request:
+  pull_request_target:
     types: [closed]
+
+permissions:
+  contents: write
 
 jobs:
   release:
@@ -17,6 +20,8 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.merge_commit_sha }}
 
       # Generate a tag based on current UTC date‑time down to seconds, e.g., v20250504123045
       - name: Set release tag
